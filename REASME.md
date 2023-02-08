@@ -62,4 +62,11 @@ function fn(参数: 类型, 参数: 类型):类型{ ... }
 | string| 'hi',"hi", | 任意字符串 |
 | boolean | true,false | 布尔值true或false |
 | 字面量 | 其本身 | 限制变量的值就是该字面量的值 |
-|  |  |  |
+| any | *  | 任意类型 |
+| unknown | * | 类型安全的any |
+| void | 控制(undefined) | 没有值(或undefined) |
+| never | 没有值 | 不能是任何值 |
+| object | {name:'悟空'} | 任意的js对象 |
+| array | [1,2,3] | 任意js数组 |
+| tuple | [4,5] | 元素,TS新增类型,固定长度的数组 |
+| enum | enum[A,B] | 枚举,TS中新增类型 |
