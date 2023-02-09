@@ -166,3 +166,6 @@ function fn(参数: 类型, 参数: 类型):类型{ ... }
 > > 
 > > > strict 所有严格检查的总开关,默认为fasle
 > > > `"strict": true`
+
+
+
