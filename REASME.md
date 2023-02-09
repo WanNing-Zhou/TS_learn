@@ -152,10 +152,17 @@ function fn(参数: 类型, 参数: 类型):类型{ ... }
 > > >  noEmitOnError 当有错误的时候不生成编译后的文件默认值为false  
 > > >  `"noEmitOnError": true`
 > >
-> > >  
-> > > 
-> > > 
-> > > 
-> > > 
-> > >
-> > >
+> > >  "alwaysStrict" 用来设置编译后的文件是否使用严格模式,默认为false  
+> > > `  "alwaysStrict": true,`
+> > 
+> > >  noImplicitAny 是否允许隐式any类型默认为false  
+> > > `  "alwaysStrict": true,`
+> >
+> > >  "noImplicitThis" 是否允许不明确类型的this  
+> > >    ` "noImplicitThis": true,`
+> >
+> > > "strictNullChecks" 是否严格检查空值 默认为false 
+> > > `"strictNullChecks": true`
+> > 
+> > > strict 所有严格检查的总开关,默认为fasle
+> > > `"strict": true`

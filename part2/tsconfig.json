@@ -21,5 +21,10 @@
     "removeComments": true,
     "noEmit": false,
     "noEmitOnError": true,
+    "alwaysStrict": true,
+    "noImplicitAny": true,
+    "noImplicitThis": true,
+    "strictNullChecks": true,
+    "strict": true
   }
 }
