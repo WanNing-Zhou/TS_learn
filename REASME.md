@@ -137,10 +137,25 @@ function fn(参数: 类型, 参数: 类型):类型{ ... }
 > > > outFile 编译后代码和并为一个文件  
 > > > `    "outFile": "/dist/app.js",`
 > >
-> > >
-> > >
-> > >
-> > >
-> > >
+> > > allowJs 是否对Js文件进行编译,默认是false  
+> > > `"allowJs": false,`
+> > 
+> > > checkJs 是否检查js代码是否符合语法规范,默认是false  
+> > > `   "checkJs": false`
+> >
+> > > removeComments 是否移除注释,默认式false  
+> > > `"removeComments": true,`
+> >
+> > >  `noEmit` 不生成编译后的文件,默认是false  
+> > > `"noEmit": false,` 
+> > 
+> > >  noEmitOnError 当有错误的时候不生成编译后的文件默认值为false  
+> > >  `"noEmitOnError": true`
+> >
+> > >  
+> > > 
+> > > 
+> > > 
+> > > 
 > > >
 > > >

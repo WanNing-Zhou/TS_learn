@@ -17,5 +17,9 @@
     "outFile": "./dist/app.js",
 
     "allowJs": false,
+    "checkJs": false,
+    "removeComments": true,
+    "noEmit": false,
+    "noEmitOnError": true,
   }
 }
