@@ -8,8 +8,14 @@
   ],
   //编译器得选项
   "compilerOptions": {
-    "target": "ES6",
+    "target": "ES2015",
     "lib": ["ES6","DOM"],
-    "module": "CommonJS"
+    "module": "ES2015",
+    //outDir用来指定编译后文件所在的目录
+    "outDir": "./dist",
+    //将代码合并为一个文件
+    "outFile": "./dist/app.js",
+
+    "allowJs": false,
   }
 }
