@@ -1,8 +1,12 @@
 // 引入path
 const path = require('path')
+// 引入html插件
+const HTMLWebpackPlugin = require('html-webpack-plugin');
+//引入clean插件
+const  {CleanWebpackPlugin} = require('clean-webpack-plugin')
 
 module.exports = {
-    mode: 'development',
+    mode: 'production',
     //指定入口文件
     entry: './src/index.ts',
 
@@ -22,11 +26,24 @@ module.exports = {
                 //test指定的是规则生效的文件
                 test: /\.ts$/,
                 //要使用的loader
-                use:'ts-loader',
+                use: 'ts-loader',
                 //要排除的文件
-                exclude:/node-modules/
+                exclude: /node-modules/
             }
         ]
+    },
+    //配置Webpack插件
+    plugins: [
+        new CleanWebpackPlugin(),
+        new HTMLWebpackPlugin({
+            // title:"./src/index.html"
+            template:'./src/index.html'
+        }),
+    ],
+
+    //用来设置引用模块
+    resolve:{
+        extensions:['.ts','.js']
     }
 
 
