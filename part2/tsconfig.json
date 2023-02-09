@@ -1,9 +1,15 @@
 {
 
   "include": [
-    "./src/**/*",
+    "./src/**/*"
   ],
   "exclude": [
     "./src/hello/**/*"
-  ]
+  ],
+  //编译器得选项
+  "compilerOptions": {
+    "target": "ES6",
+    "lib": ["ES6","DOM"],
+    "module": "CommonJS"
+  }
 }

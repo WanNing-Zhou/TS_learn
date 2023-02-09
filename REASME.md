@@ -98,5 +98,46 @@ function fn(参数: 类型, 参数: 类型):类型{ ... }
 > > compilerOptions  
 > > 编译选项是配置文件中非常重要也比较复杂的配置选项  
 > > 在compiler中包含多个子选项,用来完成对编译的配置  
-> > > 项目选择  
+> >  项目选择: 
+> > > target 设置ts代码编译得目标版本  
+> > >  - 可选值: ES3(默认),ES5,ES6/ES1015,ES7/ES2016,ES2017,ES2018,ES2019,ES2020,ESNext
+> > > 示例:
+> > > ```json
+> > > "compilerOptions": {
+> > >  "target": "ES6"
+> > > }
+> > > ```
+> > > - 如上设置,我们所编写得ts代码将会被编译为ES6版本得js代码
+> >
+> > > lib 指定代码运行时所包含得库(宿主环境)  
+> > > - 可选值: ,ES5,ES6/ES1015,ES7/ES2016,ES2017,ES2018,ES2019,ES2020,ESNext,DOM,WebWorker,ScriptHost...
+> > > 示例:
+> > > ```json
+> > > "compilerOptions": {
+> > >    "target": "ES6",
+> > >    "lib": ["ES6","DOM"]
+> > > }
+> > > ```
+> > 
+> > > module 设置编译后代码使用得模块化系统  
+> > > - 可选值: CommonJS,UMD,AMD,System,ES2020,ESNext,None
+> > > 示例:
+> > > ```json
+> > > "compilerOptions": {
+> > >    "target": "ES6",
+> > >    "lib": ["ES6","DOM"],
+> > >    "module": "CommonJS"
+> > > }
+> > >```
+> > 
+> > > outDir 编译后文件的所在目录  
+> > > 默认情况下,编译后的js文件会和ts文件位于相同的目录,设置outDir后可以改变编译后文件的位置
 > > > 
+> > > 
+> > > 
+> > >
+> > >
+> > >
+> > >
+> > >
+> > >
