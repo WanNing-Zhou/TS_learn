@@ -21,7 +21,8 @@ module.exports = {
 
         //告诉webpack不使用箭头函数
         environment:{
-            arrowFunction:false
+            arrowFunction:false,
+            const: false
         }
     },
     //指定webpack打包时要使用的模块
