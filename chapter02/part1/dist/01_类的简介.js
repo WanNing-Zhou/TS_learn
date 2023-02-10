@@ -23,3 +23,5 @@ Person.banana = 100;
 const per = new Person('勋悟空', 18);
 per.show();
 console.log('banana:' + Person.banana);
+
+
