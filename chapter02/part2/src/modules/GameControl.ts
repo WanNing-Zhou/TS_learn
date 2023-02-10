@@ -71,11 +71,35 @@ export default class GameControl{
                 X = X+10;
                 break;
         }
-        this.snake.X = X;
-        this.snake.Y = Y;
+
+        //检查蛇是否吃到了食物
+        this.checkEat(X,Y)
+
+
+
+
+        try{
+            this.snake.X = X;
+            this.snake.Y = Y;
+        }catch (e){
+            //进入人道catch,说明出现了异常,游戏结束
+            alert('蛇蛇我啊,死亡啦,死因:'+(e as any).message!)
+            this.isLive = false;
+        }
+
 
        this.isLive && setTimeout(this.run.bind(this),300-(this.scorePanel.level-1)*30);
 
+    }
+
+    //检查蛇是否吃到事物
+
+    checkEat(X:number,Y:number){
+        if (X === this.food.X && Y === this.food.Y) {
+            this.food.change() //重置食物位置
+            this.scorePanel.addScore(); //分数增加
+            this.snake.addBody()//蛇增加一节
+        }
     }
 
 }
