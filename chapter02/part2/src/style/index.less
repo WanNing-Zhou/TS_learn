@@ -1,7 +1,7 @@
 //设置变量
 @bg-color: #0d4044;
 
-@snake-color:#25f6ff;
+@snake-color:lightgreen;
 
 @food-color: #f9f7f8;
 
@@ -49,9 +49,13 @@ body{
                 height: 10px;
                 background-color: @snake-color;
                 border: 1px solid @bg-color;
-
+                border-radius: 50%;
                 //开启绝对定位
                 position: absolute;
+            }
+            #snake_head{
+                background-color: lightyellow;
+                z-index: 999;
             }
         }
         //设置事物
@@ -87,6 +91,8 @@ body{
         justify-content: space-between;
         color: #25f6ff;
     }
+
+
 
 }
 
